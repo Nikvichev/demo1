@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class school { public static void main(String[] args) { Scanner scanner = new Scanner(System.in);
+
+    int packetPen = Integer.parseInt(scanner.nextLine());
+    int packetMark = Integer.parseInt(scanner.nextLine());
+    int preparation = Integer.parseInt(scanner.nextLine());
+    int discount = Integer.parseInt(scanner.nextLine());
+
+    double pricePacketPen = packetPen * 5.80;
+    double pricePacketMark = packetMark * 7.20;
+    double pricePreparation = preparation * 1.20;
+
+    double totalPrice = pricePacketPen + pricePacketMark + pricePreparation;
+
+    double discountPrice = (totalPrice - (totalPrice * discount) / 100);
+
+    System.out.println(discountPrice);
+}
